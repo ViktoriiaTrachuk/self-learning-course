@@ -3,6 +3,7 @@ bubble_sort - should take a list of numbers as an argument and return the new li
 Also should take an optional boolean argument to change the sorting order from ascending to descending.
 If a list contains non-numeric value, method should raise ValueError
 '''
+
 numbers_list = [11, 33, 90, 120, 43, 22]
 
 def test_bubble_sort(numbers_list):
