@@ -1,0 +1,39 @@
+About this course
+This self-learning course is aimed primarily at the junior QA engineers who want to become test automation engineers or just improve their skills. There’s no point in creating lots of the original materials for the majority of topics. Plenty of them are freely available already, so typically we’d just provide the links to the quality tutorials. It is highly recommended to do the exercises in the referred tutorials.
+Most of the learning is achieved by doing the homework,  which is based on the provided materials, receiving the feedback for the delivered code and implementing the proposed changes. Optionally the homework could be delivered iteratively as a series of pull requests.
+Chapter 1 - essential tools
+Typical toolchain in H2O.ai is based on:
+Python programming language used for coding
+Python virtual environments
+Pytest framework used for testing
+make use for automating repetitive tasks
+
+To get some basic Python knowledge, please go through Learn the Basics at learnpython.org. Advanced Tutorials are optional, but highly recommended at least later.
+
+Each project may have different requirements and dependencies, for managing project dependencies without affecting the whole system typically Python virtual environments are used. Please read the Python Virtual Environments: A Primer tutorial, it should give you sufficient understanding.
+
+To automate repetitive  tasks, like creating and configuring virtual environments, as discussed above, the Make tool is used. Please go through the Getting Started and Targets chapters of the Makefile Tutorial.
+
+There are many testing frameworks available for Python, but Pytest is by far the most popular and commonly used. Please go through the Pytest - Quick Guide.
+
+And last but not least, we store all the code in github, you may find this tutorial useful.
+Quickstart - GitHub Docs
+Homework
+In github, either create a repository or create a branch in the existing one.
+The branch should contain homework-01 (or similarly named) directory with:
+Makefile having the following targets:
+setup - should create python venv and install the dependencies
+test - should run automated tests with pytest and generate junit.xml report
+clean - should delete all generated files (venv and test report)
+requirements.txt with all python packages needed to run the tests
+src/divider.py should implement the following method:
+divide takes argument x and y and return the result of division of x by y
+tests/test_divider.py should implement parameterized tests, which should check various x and y and expected results:
+Various integer x and y
+Various float x and y
+Zero y
+Non-numerical x or y
+
+
+
+
