@@ -1,0 +1,21 @@
+Lists are used to store multiple items in a single variable: https://www.w3schools.com/python/python_lists.asp 
+
+Python methods could take optional arguments:
+https://realpython.com/python-optional-arguments/ 
+
+
+Homework:
+Implement the following methods:
+bubble_sort - should take a list of numbers as an argument and return the new list with elements sorted in ascending order. Also should take an optional boolean argument to change the sorting order from ascending to descending.
+If a list contains non-numeric value, method should raise ValueError
+maximum - should take a list of numbers as an argument and return the biggest element. If empty list is given or if list contains non-numeric value, method should raise ValueError
+minimum - should take a list of numbers as an argument and return the biggest element. If empty list is given or if list contains non-numeric value, method should raise ValueError
+Implement pytest test cases for each three methods:
+Define common input data for all three method tests:
+Unsorted integer array
+Unsorted mixed integer/float array
+Pre-sorted array
+Empty array
+Array with mixed numeric and nonnumeric values
+Use predefined data to implement parameterized test cases
+The usual: Makefile with setup/test/clean targets to create venv, run tests with reports, cleaning the stuff etc.
